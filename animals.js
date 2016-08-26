@@ -36,6 +36,8 @@ if(cmd == 'read'){
     })
     console.log(animals);
   })
+
+  
 }else if(cmd == 'destroy'){
   fs.readFile(guestpath, 'utf8', function(err, data){
     var animals = JSON.parse(data)
